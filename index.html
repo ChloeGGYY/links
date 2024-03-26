@@ -21,29 +21,58 @@
 
 body {
   background-color: #004643;
+  display: flex;
+  justify-content: center;
 }
 
 .name {
   color: #fffffe;
+  display: flex;
+  justify-content: center;
 }
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .social-icons a {
   color: #fffffe;
   text-decoration: none;
 }
 
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
 .link {
   background-color: #f9bc60;
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 .link a {
   color: #001e1d;
   text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
 }
+
     </style>
   </head>
 
 <body>
+<div class="items">
   <div class="banner">
     <img src="Chloe profile.jpeg" alt="Chloe Gao headshot" class="banner-image">
   </div>
@@ -87,7 +116,7 @@ body {
 
     <a target="_blank" href="https://feralatlas.supdigital.org/">Feral Atlas — Stanford University</a>
   </div>
-
+</div>
   <!-- Etc, for as many links as you want -->
 </body>
 </html>
